@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy - CyberMap Tactical GPS Navigation</title>
+  <style>
+    :root {
+      --bg-color: #080c14;
+      --card-bg: #0f172a;
+      --text-main: #f1f5f9;
+      --text-muted: #94a3b8;
+      --accent: #00f0ff;
+      --accent-secondary: #00ff66;
+      --border: rgba(255, 255, 255, 0.1);
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-main);
+      line-height: 1.7;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 24px;
+    }
+    .header {
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 20px;
+      margin-bottom: 30px;
+    }
+    .badge {
+      display: inline-block;
+      background: rgba(0, 240, 255, 0.1);
+      color: var(--accent);
+      border: 1px solid var(--accent);
+      padding: 4px 10px;
+      font-size: 12px;
+      border-radius: 4px;
+      font-weight: 600;
+      letter-spacing: 1px;
+      margin-bottom: 12px;
+    }
+    h1 {
+      font-size: 28px;
+      margin: 0 0 8px 0;
+      color: #ffffff;
+    }
+    .effective-date {
+      color: var(--text-muted);
+      font-size: 14px;
+    }
+    h2 {
+      font-size: 20px;
+      color: var(--accent);
+      margin-top: 32px;
+      margin-bottom: 12px;
+      border-left: 3px solid var(--accent);
+      padding-left: 10px;
+    }
+    p, li {
+      color: #cbd5e1;
+      font-size: 15px;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    li {
+      margin-bottom: 8px;
+    }
+    .card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 16px 20px;
+      margin: 16px 0;
+    }
+    .highlight {
+      color: var(--accent-secondary);
+      font-weight: 600;
+    }
+    .footer {
+      margin-top: 50px;
+      border-top: 1px solid var(--border);
+      padding-top: 20px;
+      font-size: 13px;
+      color: var(--text-muted);
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="header">
+      <div class="badge">GOOGLE PLAY DATA SAFETY PROTOCOL</div>
+      <h1>Privacy Policy for CyberMap</h1>
+      <div class="effective-date">Effective Date: November 2026</div>
+    </div>
+
+    <p>Welcome to <strong>CyberMap: Tactical GPS Navigation</strong>. We respect your privacy and are committed to protecting your personal data. This privacy policy explains how CyberMap handles location data, sensor telemetry, and offline storage in compliance with Google Play Store Developer Policies.</p>
+
+    <h2>1. Prominent Location Data Disclosure</h2>
+    <div class="card">
+      <p><strong>Foreground Location Access (ACCESS_FINE_LOCATION & ACCESS_COARSE_LOCATION):</strong></p>
+      <p>CyberMap accesses your device's precise and approximate location strictly when the app is active or when you are actively navigating along a route. Location telemetry is used for:</p>
+      <ul>
+        <li><strong>Real-Time Turn-by-Turn Navigation:</strong> Tracking your vehicle or walking position along calculated road corridors to deliver voice guidance, distance countdowns, and directional maneuvers.</li>
+        <li><strong>Speed-Adaptive Dynamic Zoom:</strong> Dynamically adjusting camera follow pitch and zoom levels based on real-time cruising velocity.</li>
+        <li><strong>Sector Radar & Local Telemetry:</strong> Querying atmospheric weather data and identifying nearby amenities, fuel/charging stations, clinics, and safehouses within immediate range.</li>
+      </ul>
+      <p class="highlight">We do NOT access background location when the app is completely closed or inactive.</p>
+    </div>
+
+    <h2>2. Data Collection and Processing</h2>
+    <ul>
+      <li><strong>No Account Required:</strong> CyberMap does not require you to create an account, register your name, or provide an email address to use the map and navigation features.</li>
+      <li><strong>Ephemeral Processing:</strong> Real-time GPS coordinates are processed live on-device in memory to render your marker and calculate distance to the next turn. Location fixes are not stored on remote servers.</li>
+      <li><strong>Third-Party Routing & Weather Endpoints:</strong> When you search for an address or calculate an online route, coordinate pairs are transmitted via secure HTTPS to open routing and meteorological endpoints (Valhalla routing and Open-Meteo API). No personal identifiers, advertising IDs, or device serial numbers are attached to these queries.</li>
+    </ul>
+
+    <h2>3. Zero Data Sale and Sharing Policy</h2>
+    <div class="card">
+      <p class="highlight">We guarantee that CyberMap does NOT:</p>
+      <ul>
+        <li>Sell your location data or telemetry to third parties, data brokers, or advertising networks.</li>
+        <li>Share your personal routes, trips, or destinations with advertisers.</li>
+        <li>Track your cross-app activity across third-party websites or services.</li>
+      </ul>
+    </div>
+
+    <h2>4. On-Device Storage & User Control</h2>
+    <p>All saved places (bookmarks), recent searches, cached vector tiles, and custom offline sector data are stored <strong>100% locally on your device</strong> using client-side browser storage (LocalStorage / CacheStorage). You have full control over this data at all times:</p>
+    <ul>
+      <li>You can purge all cached tiles, bookmarks, and local preferences instantly within the app settings.</li>
+      <li>Uninstalling the app automatically purges all locally stored data.</li>
+    </ul>
+
+    <h2>5. Security</h2>
+    <p>All network communications (such as vector tile downloads and route queries) are encrypted in transit using industry-standard Transport Layer Security (TLS/HTTPS). Offline mode runs entirely without network requests.</p>
+
+    <h2>6. Changes to this Privacy Policy</h2>
+    <p>We may update this policy periodically to reflect future app enhancements or regulatory requirements. Any modifications will be posted to this page with an updated effective date.</p>
+
+    <h2>7. Contact Information</h2>
+    <p>If you have any questions or concerns regarding this privacy policy or data safety practices, please contact us at:</p>
+    <div class="card">
+      <strong>CyberMap Developer Support</strong><br>
+      Email: <a href="mailto:support@cybermap.app" style="color: var(--accent);">support@cybermap.app</a>
+    </div>
+
+    <div class="footer">
+      &copy; 2026 CyberMap. All rights reserved.
+    </div>
+  </div>
+
+</body>
+</html>
+
